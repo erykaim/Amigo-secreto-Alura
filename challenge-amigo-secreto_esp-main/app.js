@@ -19,13 +19,13 @@ function agregarAmigo() {
 
 function recorrerAmigos(){
    let lista =  document.getElementById('listaAmigos');
-    lista.innerHTML = ""; // Limpia la lista para evitar duplicados
+    lista.innerHTML = ""; 
 
     //rerrorer la lista
     for (let inicio = 0; inicio < amigos.length; inicio++) { 
-        let li = document.createElement('li'); // Crea un nuevo elemento <li>
-        li.textContent = amigos[inicio]; // Asigna el nombre del amigo al <li>
-        lista.appendChild(li); // Agrega el <li> a la lista
+        let li = document.createElement('li'); 
+        li.textContent = amigos[inicio]; 
+        lista.appendChild(li);
     }
 }
 
@@ -43,8 +43,8 @@ function sortearAmigo(){
     reiniciarJuego();
 }
 function reiniciarJuego() {
-    amigos.length = 0; // Vaciar la lista de amigos en memoria
-    document.getElementById('listaAmigos').innerHTML = ""; // Limpiar la lista en pantalla
+    amigos.length = 0; 
+    document.getElementById('listaAmigos').innerHTML = ""; 
 }
 
 
